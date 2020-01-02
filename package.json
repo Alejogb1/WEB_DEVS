@@ -1,0 +1,23 @@
+{
+  "name": "WEB_DEVS",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alejogb1/WEB_DEVS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alejogb1/WEB_DEVS/issues"
+  },
+  "homepage": "https://github.com/Alejogb1/WEB_DEVS#readme",
+  "description": "Working...zzz\r Actually developing the mobile version.",
+  "keywords": [],
+  "directories": {
+    "doc": "docs"
+  }
+}
