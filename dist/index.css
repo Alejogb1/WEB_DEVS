@@ -1,263 +1,51 @@
-html, body
-{ 
-height: 150%; 
-width: 100%; 
-margin: 0; 
-}
+/*****Add border-box, to see exactly the width i want*****/
 body {
-    font: 15px "Lucida Grande", Arial, Verdana, sans-serif;
-    text-shadow: 0px 1px 0px rgb(214, 204, 204);  
+    box-sizing: border-box;
 }
-/* Bg colours */
-.c1 {
-    background-color: #fff;
+/****"Content generally needs 
+to be contained to a fixed width for legibility"****/
+.content {
+    margin: 0 auto;
+  padding: 0 10px;
+  max-width: 1000px
 }
-.c2 {
-    background-color: rgb(37, 53, 83); 
-    position: fixed;
-    color: rgb(255, 255, 255);
-    text-shadow: 0px 1px 0px rgb(68, 63, 63); 
+/***** Rows exists just to contain my columns****/
+.row::before,
+.row::after {
+  display: table;
+  content: ' ';
+  clear: both;
 }
-.c3{
-    background-color: rgb(218, 127, 127);
+/*Columns full width*/
+.navbar-brand,
+.navbar-items,.title
+,.signup,.content {
+    width: 100%;
 }
-/**/
-body {
-  margin: 0;
-  padding-top: 45px;
+/**** Main Stylesheet, mobile version ***/
+/* Landing Page navbar*/
+.title {
+    font-size: 1.5rem;
 }
-.c1, .c2, .c3 {
-  width: 100%;
-}
-  .c2 {
-    /*order:-1;*/
-    display: flex;
-    justify-content: space-between;
-    position:fixed;
-    top:0;
-    min-height: 50px;
-  }
-/* Nav toggle show */
-  .Navbar-items,
-  .c2 {
-    flex-direction: column;
-  }
-    
+/* Mobile Nav Bar*/
 .Navbar-items {
-    display:none;
-  }
-.Navbar-ToggleShow {
     display: flex;
-    flex-direction: column;
-  }
-.Navbar-ToggleShow {
-  margin-left: -5px;
-  padding-left: 0px;
+    flex-direction:row;
+    justify-content: space-between;
+    padding-left: 0;
+    margin: auto;
 }
-#item2, #item3, #item4 {
-  margin-top: 40px;
+/**** Breakpoints ****/
+/*Mobile*/
+/*Tablet*/
+@media (min-width: 768px) {
+
 }
-.Navbar-toggle{
-    align-self: flex-start;
-    display: initial;
-    position: absolute;
-    cursor: pointer;
-   } 
-/* Menu Button */
-.Navbar-toggle {
- margin-top: 1px;
- margin-bottom: auto;
- margin-left: 8px;
-}
-.bar1, .bar2, .bar3 {
-  width: 25px;
-  height: 2.5px;
-  background-color: white;
-  margin-top: 10px;
-  margin-right: 8px;
-  border-radius: 3px;
-}
-/*Nav Brand */
-.navbar-brand {
-  margin:auto;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  font-size: 35px;
-}
-/**/
-  .title {
-      font-size: 30px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-  }
-/*#First-Line, #Second-line, #Third-line, #Forth-Line {
-      margin-top: 0px;
-      margin-bottom: 0px;
-      margin-bottom: 10px;
-      padding:0px;
-  }*/
-#Second-Line {
-  display: inline-block;
-  justify-content: inline;
-  width: 100%;
-  margin-top: 0px;
-}
-#First-Line {
-  margin-top: 10px;
-}
-#Third-Line {
-  margin-top: 0px;
-}
-#Forth-Line {
-  margin-top:0px;
-}
-/* Responsive */  
-  @media (min-width: 600px) {
-    .c1 {
-      width: 80%;
-      -webkit-order: 2;
-      order: 1;
-      font-size: 3vw;
-    }
-    button {
-      border: solid 2px black;
-      border-radius: 15px;
-      background-color: #fff;
-  }
-    .c2 {
-      /*width: 20%;
-      top:0;
-      bottom: 0;
-      left: 80%;
-      border-radius:15px;
-     -webkit-order: 1; 
-      order: 1; 
-       display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: left; */ 
-     max-height: 96px;
-    }
-    .Navbar-toggle {
-      display: none;
-    }
-    /*.Navbar-items {
-      display: flex;
-      flex-direction: row;
-      padding: auto;
-      margin: auto;
-      min-height: 96px;
-    }*/
-#Item1 {
-  position: relative;
-  margin-top: 39px
-}
-    .navbar-brand {
-      display: none;
-    }
-    button {
-     /* justify-content: center;
-      align-items: center; 
-      width: 90%; 
-       margin-left: 7px;
-      margin-right: 7px; */
-    }
-    .c3 {
-      width: 80%;
-      -webkit-order: 3;
-      order: 3;
-    }
-  }
-  
-  @media (min-width: 800px) {
-    .c2 {
-      width: 20%;
-      border-radius:20px;
-      top:0;
-      bottom: 0;
-    }
-  
-    .c3 {
-      width: 80%;
-      display: flex;
-      justify-content: center;
-    }
-  }
-  @media (min-width: 1920px) {
-    .Landing-Page {
-      display: flex;
-      flex-direction: row;
-    }
-    .Title {
-      height: 60vh;
-      font-size: 4rem;
-      margin-left: 1rem;
-    }
-    #First-Line, #Second-Line, #Third-Line, #Forth-Line {
-      
-    }
-    .Signup {
-        margin-top: 50vh;
-        font-size: 5vh;
-    }
-    .Navbar-items {
-      display: flex;
-      flex-direction:row;
-      min-height: 96px;
-      justify-content: space-between;
-      padding-left: 0;
-      margin: 0;
-    }
-    button {
-      font-size: 30px !important;
-      white-space: nowrap !important;
-      margin-top: 25px;
-      padding: 48px, 48px, 239.5px, 239.5px !important;
-    }
-    .navbar-toggle {
-      display: none;
-    }
-    .c2 {
-      width: 100%;
-      background-color: black;
-      border-radius: 0;
-    }
-     #Item1, #Item2, #Item3, #Item4{
-        border-left: solid 1px rgba(192, 192, 192, 0.973);
-        margin: 0 auto;
-        display: inline-block;
-        text-align: center;
-        
-     }
-     #Item1{
-       width: 25%;
-     }
-     #Item2 {
-      width: 25%;
-     
-     }
-     #Item3 {
-      width: 25%;
-     }
-     #Item4 {
-      width: 25%;
-     }
-  }
-   body {
-      padding-top: 96px;
-    }
-/* Taking off styles */
+/*Small Monnitor*/
+/*Large Monitor*/
+
+
+/* Avoid global Scope, except this*/
 ul {
-      list-style: none;
-  }
-    /*Apple type bar/buttons */
-button{
-  font-family: Arial, Helvetica, sans-serif;
-  border: none;
-  background-color: inherit;
-  color: white;
-  cursor: pointer;
-  font-size: 25px;
-}  
-button:focus {outline:0;}
+    list-style-type: none;
+}
