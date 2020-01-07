@@ -18,9 +18,10 @@
   "description": "Working...zzz\r Actually developing the mobile version.",
   "keywords": [],
   "directories": {
-    "doc": "docs"
+    "doc": "dist"
   },
   "dependencies": {
+    "gh-pages": "^2.2.0",
     "jquery": "^3.4.1"
   }
 }
