@@ -19,5 +19,8 @@
   "keywords": [],
   "directories": {
     "doc": "docs"
+  },
+  "dependencies": {
+    "jquery": "^3.4.1"
   }
 }
