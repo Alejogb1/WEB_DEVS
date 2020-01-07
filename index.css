@@ -9,6 +9,14 @@ to be contained to a fixed width for legibility"****/
   padding: 0 10px;
   max-width: 1000px
 }
+/****"Title generally needs 
+to be contained to a fixed width for legibility"****/
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
 /***** Rows exists just to contain my columns****/
 .row::before,
 .row::after {
@@ -64,17 +72,23 @@ to be contained to a fixed width for legibility"****/
     margin-left: 50px;
     border-left: none;
 }
-
+.c2 {
+    display: block;
+    
+}
 #openIcon.openbtn {
     position: relative;
     margin-right: 50%;
 }
 /* Mobile Nav brand */
 .navbar-brand {
-    position: relative;
-    display: inline;
-    padding-left: 50%;
-    padding-top: 50%;
+    font-size: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: rgba(140, 151, 250, 0.253);
 }
 /**** Breakpoints ****/ /*Use min-width cause i started making the mobile veresion first*/
 /*Mobile*/
