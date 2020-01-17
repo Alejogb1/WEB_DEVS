@@ -62,7 +62,7 @@
 /****"Title generally needs 
 to be contained to a fixed width for legibility"****/
 #showcase {
-    height: 95vh;
+    height: 100vh;
 }
 .title {
     display: block;
@@ -73,7 +73,7 @@ h1 {
 }
 .title {
     padding: 0 10px 0 10px ;
-    font-size:1.3rem;
+    font-size:0.98rem;
     font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 #First-L {
@@ -92,18 +92,22 @@ h1 {
     display: block;
     text-align: center;
     box-sizing: border-box;
-    border-radius: 15px;
+    border-radius: 27px;
     margin: auto;
-}
-.signup {
     text-decoration: none;
 }
+#showcase button {
+
+    position: relative;
+    margin-top: 25%;
+}
 .signup {
-    height: 2.7rem;
+    font-size: 1rem;
+    height: 4.7rem;
     font-weight: 500;
     color: rgb(255, 255, 255);
     cursor: pointer;
-    padding: 0.7rem 1rem;
+    padding: 1rem 1.8rem;
     border-width: 0px;
     background-image: radial-gradient( circle farthest-corner at 12.3% 19.3%,  rgba(85,88,218,1) 0%, rgba(95,209,249,1) 100.2% );
 }
@@ -112,8 +116,7 @@ h1 {
 .scroll-down {
     cursor: pointer;
 	position: absolute;
-	left: 50%;
-	bottom: 15px;
+	bottom: 10px;
 	display: block;
 	text-align: center;
 	font-size: 80px;
@@ -126,6 +129,7 @@ h1 {
   border-right: 2px solid rgb(0, 0, 0);
   z-index: 9;
   left: 50%;
+  margin-left: -30;
   -webkit-transform: translate(-50%, 0%) rotate(45deg);
   -moz-transform: translate(-50%, 0%) rotate(45deg);
   transform: translate(-50%, 0%) rotate(45deg);
@@ -150,6 +154,7 @@ h1 {
   100% { transform:translate(0,10px) rotate(45deg); opacity: 0; }
 }
 
+/***  Features Bar ***/
 #Hey{
     position: relative;
     text-align: center;
