@@ -62,18 +62,22 @@
 /****"Title generally needs 
 to be contained to a fixed width for legibility"****/
 #showcase {
+    overflow: hidden;
+    display: block;
     height: 100vh;
+    box-sizing: border-box;
 }
 .title {
     display: block;
     text-align: center; 
+    width: 100%;
 }
 h1 {
     font-weight: 700; /** Changed default h1 f-weight property **/
 }
 .title {
     padding: 0 10px 0 10px ;
-    font-size:1.5rem;
+    font-size:6vw;
     font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 #First-L {
@@ -156,11 +160,13 @@ h1 {
 
 /***  Features Bar ***/
 #Hey{
+    overflow: hidden;
+    box-sizing:border-box ;
     position: relative;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     height: 50px;
-    font-size: 1.4rem;
+    font-size: 20px;
     margin-top: none;
     margin-bottom: none;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
