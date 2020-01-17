@@ -1,89 +1,22 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
+/**** !Main Stylesheet, mobile version! ***/
 
-
-
-/*****Add border-box, to see exactly the width i want*****/
-body {
-    box-sizing: border-box; 
+/** Mobile Nav brand (Displaying)**/
+.navbar-brand {
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top:0.9%;
+    padding-bottom: 0.9%;
 }
-/**** Main Stylesheet, mobile version ***/
-/****"Content generally needs 
-to be contained to a fixed width for legibility"****/
-.content {
-  margin: 0 auto;
-  margin-top: 30px;
-  /** Padding to the right makes the card more WIDE  **/
-  padding: 0 20px;
-  max-width: 280px;
-  max-height: 220px;
-}
-/* Content box shadow, radius and hover */
-.content {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 18px;
-}
-.content:hover {
-    cursor: pointer;
-    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.5) ;
-}
-/**  Types of Content   **/
-.bulb-img {
-    position: relative;
-    left: 20px;
-    width: 80%;
-    height: auto;
-    bottom: 0.1px;
-}
-.card-p2 {
-    text-align: center;
-    position: relative;
-    margin-left: 20px;
-    margin-top: 40px;
-}
-#bulb {
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-/***  Ilustration images   ***/
-.ilustration-img {
-    position: relative;
-    left: 10px;
-    width: 90%;
-    height: auto;
-}
-.card-p {
-    text-align: center;
-}
-/****"Title generally needs 
-to be contained to a fixed width for legibility"****/
-.title {
-    display: block;
-    text-align: center; 
-}
-h1 {
-    font-weight: 700; /** Changed default h1 f-weight property **/
-}
-.title {
-    padding: 0 10px 0 10px ;
-    font-size:1.3rem;
-    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-}
-#First-L {
-    margin-block-start: 0.22em;
-    margin-block-end: 0.23em;
-}
-#Second-L, #Third-L, #Forth-L {     
-    margin-block-start: 0.2em;
-    margin-block-end: 0.23em;
-}
-/***** Rows exists just to contain my columns ("Clearfix hack")****/
-.row::before,
-.row::after {
-  display: table;
-  content: ' ';
-  clear: both;
+.navbar-brand {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-weight:bold;
+    font-family: 'Roboto', sans-serif;
 }
 /**** Mobile Nav Bar (Not displaying, disabled) *****/
 .Navbar {
@@ -112,7 +45,11 @@ h1 {
   line-height: 2.42857143;
   border-left: 3.6px solid #5d6add;
 }
-
+/* Open & Button Icon*/
+#openIcon.openbtn {
+    position: relative;
+    margin-right: 50%;
+}
 .Navbar .closebtn {
     position: absolute;
     top: 0;
@@ -120,28 +57,36 @@ h1 {
     font-size: 36px;
     margin-left: 50px;
     border-left: none;
+}/* If there's a bug with side navbar, write code: ".c2 {display:block}   */
+
+/****"Title generally needs 
+to be contained to a fixed width for legibility"****/
+#showcase {
+    height: 95vh;
 }
-/* If there's a bug with side navbar, write code: ".c2 {display:block}   */
-/* */
-#openIcon.openbtn {
+.title {
+    display: block;
+    text-align: center; 
+}
+h1 {
+    font-weight: 700; /** Changed default h1 f-weight property **/
+}
+.title {
+    padding: 0 10px 0 10px ;
+    font-size:1.3rem;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+#First-L {
     position: relative;
-    margin-right: 50%;
+    top: 0.23em;
+    margin-block-start: 0em;
+    margin-block-end: 0.23em;
 }
-/** Mobile Nav brand **/
-.navbar-brand {
-    font-size: 1.2rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-top:0.9%;
-    padding-bottom: 0.9%;
+#Second-L, #Third-L, #Forth-L {     
+    margin-block-start: 0.2em;
+    margin-block-end: 0.23em;
 }
-.navbar-brand {
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    font-weight:bold;
-    font-family: 'Roboto', sans-serif;
-}
+
 /*****  Sign Up button  *****/
 .signup {
     display: block;
@@ -162,15 +107,154 @@ h1 {
     border-width: 0px;
     background-image: radial-gradient( circle farthest-corner at 12.3% 19.3%,  rgba(85,88,218,1) 0%, rgba(95,209,249,1) 100.2% );
 }
+
+/***  Scroll Down Arrow  ***/
+.scroll-down {
+    cursor: pointer;
+	position: absolute;
+	left: 50%;
+	bottom: 15px;
+	display: block;
+	text-align: center;
+	font-size: 80px;
+	z-index: 100;
+	text-decoration: none;
+	text-shadow: 0;
+  width: 28px;
+  height: 28px;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  border-right: 2px solid rgb(0, 0, 0);
+  z-index: 9;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%) rotate(45deg);
+  -moz-transform: translate(-50%, 0%) rotate(45deg);
+  transform: translate(-50%, 0%) rotate(45deg);
+	-webkit-animation: fade_move_down 4s ease-in-out infinite;
+	-moz-animation:    fade_move_down 4s ease-in-out infinite;
+	animation:         fade_move_down 4s ease-in-out infinite;
+}
+/*animated scroll arrow animation*/
+@-webkit-keyframes fade_move_down {
+  0%   { -webkit-transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { -webkit-transform:translate(0,10px) rotate(45deg); opacity: 0; }
+}
+@-moz-keyframes fade_move_down {
+  0%   { -moz-transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { -moz-transform:translate(0,10px) rotate(45deg); opacity: 0; }
+}
+@keyframes fade_move_down {
+  0%   { transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { transform:translate(0,10px) rotate(45deg); opacity: 0; }
+}
+
+#Hey{
+    position: relative;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    height: 50px;
+    font-size: 1.4rem;
+    margin-top: none;
+    margin-bottom: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: rgb(0, 0, 0);
+}
+#Hey p {
+    font-weight: 900;
+    color: white;
+    position: relative;
+    top: 8px;
+}
+main {
+    background-color: rgb(255, 255, 255);
+}
+p {
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+/****"Content generally needs 
+to be contained to a fixed width for legibility"****/
+.content {
+  margin: 0 auto;
+  margin-top: 30px;
+  /** Padding to the right makes the card more WIDE  **/
+  padding: 0 20px;
+  max-width: 280px;
+  max-height: 220px;
+}
+/* Content box shadow, radius and hover */
+.content {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 18px;
+}
+.content:hover {
+    cursor: pointer;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.5) ;
+}
+/***  Blocks/Mockups/Cards  ***/
+/* (First Block) "ReadinGirl Ilustration" */
+.ilustration-img {
+    position: relative;
+    left: 10px;
+    width: 90%;
+    height: auto;
+    
+}
+.card-p {
+    text-align: center;
+}
+/* (Second Block) "Bulb Ilustration" */
+.bulb-img {
+    position: relative;
+    left: 20px;
+    width: 80%;
+    height: auto;
+    bottom: 0.1px;
+}
+.card-p2 {
+    text-align: center;
+    position: relative;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+#bulb {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+
 /**** Breakpoints ****/ 
 /*Use min-width cause i started making the mobile veresion first*/
-/*Mobile*/
 /*Tablet*/
 /*Small Monitor*/
 /*Large Monitor*/
 
 
-/*** Avoid global Scopes, except these ****/
+/*** Avoid global Scopes, except these (Global Configs) ****/
+/*Add border-box, to see exactly the width i want*/
+body {
+    box-sizing: border-box; 
+}
+body {    /*  Taking margin of the websit out  */
+    margin: 0 !important;
+    
+    padding: 0 !important;
+}
+/* Rows exists just to contain my columns ("Clearfix hack") */
+.row::before,
+.row::after {
+  display: table;
+  content: ' ';
+  clear: both;
+}
+
 ul {
     list-style-type: none;
     /* Had to turn these to 0, otherwise navbar shows before opening it*/
@@ -180,6 +264,7 @@ ul {
     margin-inline-end: 0px;
     padding-inline-start: 0px;
 }
+
 /* figure agent stylesheet properties taken off */
 figure {
     overflow: hidden;
@@ -188,7 +273,10 @@ figure {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
-body {    /*  Taking margin of the websit out  */
-    margin: 0 !important;
-    padding: 0 !important;
+
+#footer {
+  margin-top: 20px;
+  margin-bottom: 4px;
+  display: block;
+  height: 1.5rem;            /* Footer height */
 }

@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="index.css">
-    <link rel="icon" href="/img/favicon.ico">
+    <link rel="icon" href="dist/img/favicon.ico">
     <title>Web-Devs</title>
 </head>
 <body>   
@@ -19,28 +19,36 @@
           <li><a href="#">Courses</a></li> 
           <li><a href="#">Books</a></li>         
       </ul>
-    <!-- <span style="font-size:50px;cursor:pointer" class="openbtn" onclick="openNav()" id = "openIcon">&#9971;</span>-->
     </nav>
-</header> 
-        <header  class= "row">
-             <div class="Title">
-               <h1 id="First-L"> All your</h1>
-               <h1 id="Second-L">Web Development</h1>
-               <h1 id="Third-L">Content</h1>
-               <h1 id="Forth-L">In One Place.</h1>
-             </div>  
+  </header>
+    <!-- <span style="font-size:50px;cursor:pointer" class="openbtn" onclick="openNav()" id = "openIcon">&#9971;</span>-->
+
+  <div class="title" id="showcase">
+              <h1 id="First-L"> All your</h1>
+              <h1 id="Second-L">Web Development</h1>
+              <h1 id="Third-L">Content</h1>
+              <h1 id="Forth-L">In One Place.</h1> 
              <button href=/Signup class="Signup">
                 Sign Up For Free
              </button>
-        </header>
-      <main>
+          </div> 
+          <div class="arrow">
+            <span class="scroll-down"></span>
+  </div>
+  <main>
+        <section id="Hey">
+            <p>Build, Create & Publish</p>
+        </section>
         <Article class="content" class="organized-content" class="row">
             <p class ="card-p">
             Organized content for you.
             </p>
-            <figure  >
-              <img src="/dist/img/readingirl.png" class="ilustration-img" alt="Reading girl ilustration">  
-            </figure>
+            <figure>
+              <a href="/direction.html">
+                <img src="img/readingirl.png" class="ilustration-img" alt="Reading girl ilustration">  
+              </a>
+              </figure>
+
         </Article>
         <Article class="content"  id= "bulb" >
           <a class="card-p2">
@@ -53,11 +61,13 @@
             Books
           </a>
           <figure>
-            <img src="/dist/img/lightbulb.png"  class="bulb-img" alt="Light Bulb Ilustration">  
+            <a href="/projects.html">
+              <img src="img/lightbulb.png"  class="bulb-img" alt="Light Bulb Ilustration">  
+            </a>
           </figure> 
         </Article>     
-    </main> 
-    <footer class="row" style="text-align: center;">
+  </main> 
+    <footer class="row" style="text-align: center;" id="footer">
           &copy; Copyright 2020 WEB_DEVS
     </footer>
          
