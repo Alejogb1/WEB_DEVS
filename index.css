@@ -5,7 +5,7 @@
 
 /** Mobile Nav brand (Displaying)**/
 .navbar-brand {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -73,17 +73,17 @@ h1 {
 }
 .title {
     padding: 0 10px 0 10px ;
-    font-size:0.98rem;
+    font-size:1.5rem;
     font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 #First-L {
     position: relative;
     top: 0.23em;
-    margin-block-start: 0em;
+    margin-block-start: 0.23em;
     margin-block-end: 0.23em;
 }
 #Second-L, #Third-L, #Forth-L {     
-    margin-block-start: 0.2em;
+    margin-block-start: 0.23em;
     margin-block-end: 0.23em;
 }
 
