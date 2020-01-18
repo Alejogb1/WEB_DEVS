@@ -76,7 +76,6 @@ h1 {
     font-weight: 700; /** Changed default h1 f-weight property **/
 }
 .title {
-    padding: 0 10px 0 10px ;
     font-size:6vw;
     font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
