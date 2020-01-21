@@ -133,7 +133,6 @@ to be contained to a fixed width for legibility"****/
     justify-content: center;
 }
 .scroll-down {
-    cursor: pointer;
 	position: relative;
 	display: block;
     text-align: center;
@@ -267,6 +266,49 @@ to be contained to a fixed width for legibility"*/
 /*Tablet*/
 /*Small Monitor*/
 /*Large Monitor*/
+/* Media Screen*/
+@media screen and (min-width: 800px) {
+    /* Desktop styles go here*/
+    .showcase {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly; /* Space between row and form. */
+        padding:15px 5% 30px; /* 60px to 30px of padding and 5% responsive side padding. */
+        height: 90vh; /*  100vh is bigger than screen so changed to 90vh. */
+    }
+    .form { /* form class created to manage flex between form and title */
+        display: flex;
+        flex-direction: row;
+    }
+    .title {
+    width: auto; /*  It was 100% so text was text & card were very wide.    */
+    box-sizing: border-box; /* Helps to fix text with padding */
+    padding: 2em 2.8rem; /** Same as button  **/
+    text-align: center;
+    margin: auto; /* Keeps card from going to the left, and stays in center.  */
+    font-size: 1.5em;
+    }
+    /* Arrow */
+    .arrow { /* Bunch of properties that are not needed. */
+        display: none;
+    }
+    .desk-arrow { /* Class created for flex. */
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+    /* Content  */
+    .block-center {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row; /*  Column for mobile, row for desktop.   */
+    }
+    /* Features */
+    #Features-bar {
+        border: 2px solid white; /* Makes this the default trigger section, border.  */
+    }
+
+  }
 
 
 /*** Avoid global Scopes, except these (Global Configs) ****/
