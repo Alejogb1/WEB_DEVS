@@ -68,18 +68,18 @@ to be contained to a fixed width for legibility"****/
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    height: 100vh;
     box-sizing: border-box;
     padding: 15px 10px 60px;
     justify-content: center;
 }
 .title {
+    margin: 10px auto ;
     display: block;
     text-align: center; 
-    width: 100%;
+    width: 80%;
 }
 .title {
-    font-size:6vw;
+    font-size:20px;
     font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 #First-L {
@@ -95,22 +95,26 @@ to be contained to a fixed width for legibility"****/
 
 /*****  Sign Up button  *****/
 .showcase button {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    font-size: 17px;
+    font-weight: 800;
+    
+    border: 3px solid rgb(35, 36, 34);
 }
 .showcase button:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    
 }
 .signup {
+    width: 100%;
     display: block;
     text-align: center;
     box-sizing: border-box;
-    border-radius: 15px;
     margin: auto;
     text-decoration: none;
 }
 .signup {
-    font-size: 1rem;
-    height: 4.7rem;
+    font-size: 0.7rem;
+    height: 3.7rem;
     font-weight: 500;
     color: rgb(255, 255, 255);
     cursor: pointer;
@@ -267,6 +271,7 @@ to be contained to a fixed width for legibility"*/
     .showcase {
         padding: 10px;
     }
+
 }
 /*Use min-width cause i started making the mobile veresion first*/
 /*Tablet*/
@@ -280,7 +285,7 @@ to be contained to a fixed width for legibility"*/
         flex-direction: column;
         justify-content: space-evenly; /* Space between row and form. */
         padding:15px 5% 30px; /* 60px to 30px of padding and 5% responsive side padding. */
-        height: 90vh; /*  100vh is bigger than screen so changed to 90vh. */
+        min-height: 118vh; /*  this height, otherwise content doesnt fit in screen. (Before was 90vh) */
     }
     .form { /* form class created to manage flex between form and title */
         display: flex;
