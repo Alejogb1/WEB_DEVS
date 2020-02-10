@@ -262,6 +262,12 @@ to be contained to a fixed width for legibility"*/
 }
 
 /**** Breakpoints ****/ 
+/**/
+@media screen and (max-width: 567px) {
+    .showcase {
+        padding: 10px;
+    }
+}
 /*Use min-width cause i started making the mobile veresion first*/
 /*Tablet*/
 /*Small Monitor*/
@@ -305,7 +311,7 @@ to be contained to a fixed width for legibility"*/
     }
     /* Features */
     #Features-bar {
-        border: 2px solid white; /* Makes this the default trigger section, border.  */
+        border: 2px solid white; /* Make this the default trigger section, border.  */
     }
 
   }
