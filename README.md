@@ -1,3 +1,4 @@
 # Content_Website
 Working...zzz
-Actually developing the mobile version. 
+Actually developing the mobile version. Trash.
+
